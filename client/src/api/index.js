@@ -15,6 +15,9 @@ export const getPodcasts = async(dispatch,country) =>{
 			type:"ERROR",
 			payload:err.response.data.msg
 		})
+		dispatch({
+			type:"LOADING"
+		})
 	}
 }
 
@@ -31,6 +34,9 @@ export const searchPodcast = async(search,dispatch,country) =>{
 		dispatch({
 			type:"ERROR",
 			payload:err.response.data.msg
+		})
+		dispatch({
+			type:"LOADING"
 		})
 	}
 }
@@ -54,6 +60,9 @@ export const feedPlayer = async(url,dispatch) =>{
 		dispatch({
 			type:"ERROR",
 			payload:err.response.data.msg
+		})
+		dispatch({
+			type:"LOADING"
 		})
 	}
 }
