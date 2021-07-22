@@ -25,7 +25,7 @@ const LeftCard = () => {
 				{
 					!state.selectedPodcast || !state.title ?
 						(
-						<h5 className="text-center">Listen to your favrourite podcasts</h5>
+						<h5 className="text-center">Listen to your favourite podcasts</h5>
 						) : null
 				}
 				{
